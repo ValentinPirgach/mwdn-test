@@ -13,8 +13,6 @@ export const fetchTesters = (testerName) => async dispatch => {
   try {
     const resp = await axios.get(`ex/${testerName}`);
 
-    console.log(resp.data);
-
     if(!resp.data) {
       return dispatch(fetchTestersNotFound())
     }

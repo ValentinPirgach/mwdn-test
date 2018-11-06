@@ -1,7 +1,9 @@
 import * as types from 'constants/ActionTypes'
 import createReducer from 'utils/createReducer'
 
-export default createReducer({list: []})({
+export const testersInitialState = {list: []}
+
+export default createReducer(testersInitialState)({
   [types.FETCH_TESTERS_REQUEST]: (state) => ({
     ...state,
     isFetching: true

@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import { createStructuredSelector, createSelector } from 'reselect'
 import * as testersActions from 'actions/testers'
 
-class CounterContainer extends React.Component {
+export class TestersContainer extends React.Component {
   static propTypes = {
     fetchTesters: PropTypes.func.isRequired,
     testers: PropTypes.shape({
@@ -38,7 +38,7 @@ class CounterContainer extends React.Component {
   }
 }
 
-const mapStateToProps = createStructuredSelector({
+export const mapStateToProps = createStructuredSelector({
   // TODO: That's might be moved into separate selectors file
   testers: createSelector(
     state => state.testers,
@@ -57,4 +57,4 @@ const mapDispatchToProps = dispatch => bindActionCreators({
   fetchTesters: testersActions.fetchTesters
 }, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(CounterContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(TestersContainer)

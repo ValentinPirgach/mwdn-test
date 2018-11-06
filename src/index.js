@@ -9,9 +9,6 @@ import 'antd/dist/antd.css';
 import registerServiceWorker from 'utils/registerServiceWorker'
 
 axios.defaults.baseURL = 'https://cors-anywhere.herokuapp.com/https://test-api.techsee.me/api/'
-// axios.defaults.headers = {
-//   Origin: 'https://test-api.techsee.me'
-// }
 
 render(
   <Provider store={configureStore()}>

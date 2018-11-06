@@ -1,5 +1,14 @@
-# Mwdn Test
+# Search Bugs Test
 [![generator-create-redux-app](https://img.shields.io/badge/built%20with-generator--create--redux--app-brightgreen.svg)](https://github.com/jonidelv/generator-create-redux-app)
+
+# Get Started
+For the first step create `.env` file with content `NODE_PATH=src/`.
+This command will help you to do that faster:
+
+`touch .env && echo "NODE_PATH=src/" >> .env`
+
+Note:
+Because of CORS, this simple project use `https://cors-anywhere.herokuapp.com` as a proxy
 
 This project was generated with [Create Redux App](https://github.com/jonidelv/generator-create-redux-app). Refer to `docs/create-redux-app` to find more information on how to perform common tasks.
 
