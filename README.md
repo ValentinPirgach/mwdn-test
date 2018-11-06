@@ -12,6 +12,9 @@ Because of CORS, this simple project use `https://cors-anywhere.herokuapp.com` a
 
 This project was generated with [Create Redux App](https://github.com/jonidelv/generator-create-redux-app). Refer to `docs/create-redux-app` to find more information on how to perform common tasks.
 
+To install all packages run
+### `npm install` or `yarn install`
+
 Once the installation is done, you can run some commands inside the project folder:
 
 ### `npm start` or `yarn start`
